@@ -78,10 +78,11 @@
 %----------HEADING-----------------
 \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
   \textbf{{\LARGE Дружков Сергей Александрович}} &
-  \href{https://github.com/DrSergei}{Github: github.com/DrSergei}\\
-  Date of Birth: 23.11.2002\ & City: ~~~~~~~Санкт-Петербург\\
-  \href{mailto:serzhdruzhok@gmail.com}{Email: serzhdruzhok@gmail.com}\ & Mobile:~~~~~~+7-900-521-97-42 \\
-  \
+  \href{https://github.com/DrSergei}{GitHub:~github.com/DrSergei}\\
+  \href{mailto:serzhdruzhok@gmail.com}{Email: serzhdruzhok@gmail.com}\ & 
+  \href{https://t.me/SergeiDruzhkov}{Telegram:~~~@SergeiDruzhkov}\\
+  \href{https://orcid.org/0009-0000-6835-2844}{ORCID: 0009-0000-6835-2844} & Mobile:~~~~~~+7-900-521-97-42 \\
+  Date of Birth: 23.11.2002 & City:~~~~~~~~Санкт-Петербург \\
 \end{tabular*}
 
 %-----------EDUCATION-----------------
@@ -94,8 +95,8 @@
       {\scriptsize \textit{ \footnotesize{\newline{}\textbf{Thesis:} Clone detection and automatic refactoring of Lua programs for network devices}}}
     \resumeSubheading
       {ИТМО (Институт прикладных компьютерных наук)}{Санкт-Петербург, Россия}
-      {Прикладная математика и информатика (Программирование и искуственный интеллект)\hspace{-50pt}}{2025 - 2027}
-      {\scriptsize \textit{ \footnotesize{\newline{}\textbf{GPA:} --- (out of 5.00)}}}
+      {Прикладная математика и информатика (Программирование и искусственный интеллект)\hspace{-50pt}}{2025 - 2027}
+      {\scriptsize \textit{ \footnotesize{\newline{}\textbf{GPA:} 5.00 (out of 5.00)}}}
       {\scriptsize \textit{ \footnotesize{\newline{}\textbf{Thesis:} ---}}}
     \resumeSubHeadingListEnd
 	    
@@ -103,7 +104,7 @@
 \section{Skills Summary}
     \resumeSubHeadingListStart
         \resumeSubItem{Languages}{~~~~~~~~~~~C/C++, SQL, Go, TypeScript, Lua, Python}
-        \resumeSubItem{Technologies}{~~~~~~~~PostgreSQL, SQLite, CMake, Make, Git, Docker, Robot Framework, \LaTeX}
+        \resumeSubItem{Technologies}{~~~~~~~~LLVM, SQLite, CMake, Make, Git, Docker, \LaTeX}
         \resumeSubItem{Communication}{~~~Russian (Native), English (Upper-Intermediate)}
     \resumeSubHeadingListEnd
 \vspace{-5pt}
@@ -113,8 +114,8 @@
     \resumeSubheading{Huawei Russian Research Institute}{}
     {Программист-Исследователь}{Апрель 2022 - настоящее время}
         \resumeItemListStart
-        \resumeItem{Исследовательская деятельность}{Исследования в области статического и динамического анализа программ на C/C++, а также языковых инструментов для них.}
         \resumeItem{Рабочая деятельность}{Разработка высокопроизводительных приложений на базе исследований и классических результатов, а также их поддержка и внедрение в существующую экосистему компании.}
+        \resumeItem{Исследовательская деятельность}{Анализ академических публикаций и проведение собственных исследований в области анализа программ и средств разработки.}
       \resumeItemListEnd
 \resumeSubHeadingListEnd
 
@@ -125,11 +126,11 @@
 \resumeSubItem{Static analysis tool for C/C++}{
 \begin{itemize}
 \vspace{-5pt}
-\item Flow-sensitive interprocedural taint analysis of C/C++ programs.
+\item Межпроцедурный taint-анализ C/C++ программ на базе LLVM/Clang для больших проектов (>20 MLOC).
 \vspace{-3pt}
-\item Разработка domain-specific проверок и решений для больших проектов.
+\item Разработка domain-specific проверок и решений для внутренних проектов компании.
 \vspace{-3pt}
-\item Исследование применимости графовых баз данных для задач анализа программ.
+\item Исследование применимости графовых баз данных (Arango, Neo4j) для задач анализа программ.
 \vspace{-3pt}
 \end{itemize}
 }
@@ -140,7 +141,7 @@
 \vspace{-3pt}
 \item Возможность поиска и удаления дубликатов фрагментов кода.
 \vspace{-3pt}
-\item Уменьшение размера кода более чем 2 раза. Время работы < 2 минут на больщой кодовой базе (5 MLOC).
+\item Уменьшение размера кода более чем 2 раза. Время работы < 2 минут на большой кодовой базе (5 MLOC).
 \vspace{-3pt}
 \end{itemize}
 }
@@ -149,15 +150,21 @@
 \vspace{-5pt}
 \item Поддержка отладки C/C++ кода с помощью GDB/LLDB на Linux/Windows/HarmonyOS.
 \vspace{-3pt}
-\item Полная поддержка Debug Adapter Protocol (DAP) и его внутренних расширений.
-\vspace{-3pt}
 \item Возможность удаленной отладки оборудования по SSH и Telnet.
 \vspace{-3pt}
 \item Продвинутые методы отладки (child process debugging, deadlock detector, thread fuzzer, memory debugging, etc.).
 \vspace{-3pt}
-\item Два MCP-сервера (для VS Code и CLI) на основе DAP для работы с LLM.
+\item Более 1500 регулярных пользователей внутри компании.
 \vspace{-3pt}
-\item Более 1500 пользователей внутри компании.
+\end{itemize}
+}
+\vspace{2pt}
+\resumeSubItem{Debug Agent}{
+\begin{itemize}
+\vspace{-3pt}
+\item MCP-сервер на основе VS Code API для работы с подсистемой отладки и полной интеграцией с VS Code UI.
+\vspace{-3pt}
+\item MCP-сервер для CLI-агентов для работы с такими отладчиками как GDB, LLDB, Delve и т.д. по средсвам DAP.
 \vspace{-3pt}
 \end{itemize}
 }
@@ -175,13 +182,7 @@
 \vspace{-5pt}
 \item {Призер региональной олимпиады по математике для студентов ВУЗов Санкт-Петербурга - 2022 (12/122)}
 \vspace{-5pt}
-\item {Призер НТО (студенческий трек) по профилю ``Геопространственные цифровые двойники'' - 2023, 2025}
-\vspace{-5pt}
-\item {Победитель НТО (студенческий трек) по профилю ``Геопространственные цифровые двойники'' - 2024}
-\vspace{-5pt}
 \item {Призер Я-Профессионал по профилю ``Математика'' - 2025}
-\vspace{-5pt}
-\item {Победитель конкурса-конференции ``Современные технологии в теории и практике программирования'' - 2025}
 \vspace{-5pt}
 \item {Победитель сибирской математической олимпиады - 2025 (8/378)}
 \vspace{-5pt}
@@ -191,23 +192,12 @@
 
 \vspace{-5pt}
 \section{Other Experience}
-  \resumeSubHeadingListStart
-    \resumeSubheading
-    {Младший преподаватель в Кировской летней многопредметной школе (ЛМШ)}{Киров, Россия}
-    {Подготовка учебных материалов и проведение занятий.}{2021}
-    \vspace{-3pt}
-    \resumeSubheading
-    {Жюри муниципального и областного этапа ВсОШ по математике}{Киров, Россия}
-    {Проверка работ участников и выработка критериев.}{2021-2025}
-    \vspace{-3pt}
-    \resumeSubheading
-    {Жюри Санкт-Петербургской математической олимпиады}{Санкт-Петербург, Россия}
-    {Проверка решений участников и помощь в организации.}{2022-2026}
-    \vspace{-3pt}
-    % \resumeSubheading
-    % {Участник менторской программы СПбГУ и Nexign}{Санкт-Петербург, Россия}
-    % {Разработка карьерного плана для развития в области информационных технологий}{2024}
-    % \vspace{-3pt}
-\resumeSubHeadingListEnd
+\begin{description}[font=$\bullet$]
+\item {Младший преподаватель в Кировской летней многопредметной школе (ЛМШ) - 2021}
+\vspace{-5pt}
+\item {Жюри муниципального и областного этапа ВсОШ по математике (Киров) - 2021-2025}
+\vspace{-5pt}
+\item {Жюри Санкт-Петербургской математической олимпиады - 2022-2026}
+\end{description}
 
 \end{document}
