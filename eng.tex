@@ -16,7 +16,7 @@
 \renewcommand{\headrulewidth}{0pt}
 \renewcommand{\footrulewidth}{0pt}
 
-\usepackage[english,main=russian]{babel}
+\usepackage[english]{babel}
 \usepackage{ragged2e}
 \usepackage{graphicx}
 
@@ -77,86 +77,127 @@
 
 %----------HEADING-----------------
 \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
-  \textbf{{\LARGE Druzhkov Sergei}} &
-  \href{https://github.com/DrSergei}{Github: github.com/DrSergei}\\
-  \href{mailto:serzhdruzhok@gmail.com}{Email: serzhdruzhok@gmail.com}\ & Mobile:~~~~~~+7-900-521-97-42 \\
-  \
+  \textbf{{\LARGE Sergei Druzhkov}} &
+  \href{https://github.com/DrSergei}{GitHub:~github.com/DrSergei}\\
+  \href{mailto:serzhdruzhok@gmail.com}{Email: serzhdruzhok@gmail.com}\ & 
+  \href{https://t.me/SergeiDruzhkov}{Telegram:~~~@SergeiDruzhkov}\\
+  \href{https://orcid.org/0009-0000-6835-2844}{ORCID: 0009-0000-6835-2844} & Mobile:~~~~~~+7-900-521-97-42 \\
+  Date of Birth: 23.11.2002 & City:~~~~~~~~~~Saint Petersburg \\
 \end{tabular*}
 
 %-----------EDUCATION-----------------
 \section{Education}
   \resumeSubHeadingListStart
     \resumeSubheading
-      {St. Petersburg State University(Department of Math and Computer Sciences)}{Saint Petersburg, Russia}
-      {Bachelor of Applied Mathematics and Computer Science(Modern Programming)}{September 2021 - Present}
-      {\scriptsize \textit{ \footnotesize{\newline{}\textbf{Courses:} Linux Fundamentals, Programming Fundamentals, Object-Oriented Programming, Programming in C, Calculus 1, Calculus 1, Discrete Mathematics 1}}}
+      {SPbSU (Department of Mathematics and Computer Sciences)}{Saint Petersburg, Russia}
+      {Applied Mathematics and Computer Science (Modern Programming)}{2021 -- 2025}
+      {\scriptsize \textit{ \footnotesize{\newline{}\textbf{GPA:} 4.93 (out of 5.00)}}}
+      {\scriptsize \textit{ \footnotesize{\newline{}\textbf{Thesis:} Clone detection and automatic refactoring of Lua programs for network devices}}}
+    \resumeSubheading
+      {ITMO (Institute of Applied Computer Sciences)}{Saint Petersburg, Russia}
+      {Applied Mathematics and Computer Science (Programming and Artificial Intelligence)\hspace{-50pt}}{2025 -- 2027}
+      {\scriptsize \textit{ \footnotesize{\newline{}\textbf{GPA:} 5.00 (out of 5.00)}}}
+      {\scriptsize \textit{ \footnotesize{\newline{}\textbf{Thesis:} ---}}}
     \resumeSubHeadingListEnd
 	    
 \vspace{-5pt}
 \section{Skills Summary}
-	\resumeSubHeadingListStart
-	\resumeSubItem{Languages}{~~~~~~~~~~~C++, C, Kotlin(Java), Python, Bash}
-	\resumeSubItem{Frameworks}{~~~~~~~~~Qt, Compose for Desktop}
-	\resumeSubItem{Tools}{~~~~~~~~~~~~~~~~~~~Git, 
-	%%%Docker%%%,
-	\LaTeX, MARKDOWN, Regular Expression}
-	\resumeSubItem{Platforms}{~~~~~~~~~~~~Linux, Windows}
-	\resumeSubItem{Communication}{~~~Russian(Native), English(Pre-Intermediate)}
-
-\resumeSubHeadingListEnd
+    \resumeSubHeadingListStart
+        \resumeSubItem{Languages}{~~~~~~~~~~~C/C++, SQL, Go, TypeScript, Lua, Python}
+        \resumeSubItem{Technologies}{~~~~~~~~LLVM, SQLite, CMake, Make, Git, Docker, \LaTeX}
+        \resumeSubItem{Communication}{~~~Russian (Native), English (Upper-Intermediate)}
+    \resumeSubHeadingListEnd
 \vspace{-5pt}
+
 \section{Experience}
   \resumeSubHeadingListStart
-    \resumeSubheading{Kirov Summer Multidisciplinary School (LMSH)}{Full-time}
-    {Teaching intern}{June 2021 - July 2021}
-    \resumeItemListStart
-        \resumeItem{Lectures for schoolchildren}
-          {In such areas of mathematics as number theory, discrete mathematics and geometry.}
-          \resumeItem{Other teaching work}{Checked solutions and prepared materials for classes.}
-          \resumeItem{Pedagogical work}{Arranged joint activities and games for children and helped them get to know each other.}
+    \resumeSubheading{Huawei Russian Research Institute}{}
+    {Research engineer}{April 2022 -- Present}
+        \resumeItemListStart
+        \resumeItem{Engineering activity}{Development of high-performance applications based on research and classical results, as well as their support and integration into the company's existing ecosystem.}
+        \resumeItem{Research activity}{Analysis of academic publications and conducting own research based on them in the field of program analysis and developer tools.}
       \resumeItemListEnd
-
 \resumeSubHeadingListEnd
 
 %-----------PROJECTS-----------------
 \vspace{-5pt}
 \section{Projects}
 \resumeSubHeadingListStart
-\resumeSubItem{\href{https://github.com/DrSergei/diff}{Diff utility(Kotlin)}}{ The program allows you to compare the contents of two files and find differences between them, there are different modes of operation.}
-\resumeSubItem{\href{https://github.com/DrSergei/kwdb}{Key-value database(Kotlin)}}{ The program is the simplest database for storing strings by key, supports encryption and serialization to a file.}
-\resumeSubItem{\href{https://github.com/DrSergei/viz}{Simple diagram drawer(Kotlin)}}{ The program can draw various charts on csv tables in the window and save the images to a file.}
-\resumeSubItem{\href{https://github.com/DrSergei/bmp}{BMP utility(C)}}{ The program allows you to cut and rotate and save photos. Implemented the possibility of steganography.}
+\resumeSubItem{Static analysis tool for C/C++}{
+\begin{itemize}
+\vspace{-5pt}
+\item Interprocedural taint analysis of C/C++ programs based on LLVM/Clang for large codebases (>20 MLOC).
+\vspace{-3pt}
+\item Development of domain-specific checks and solutions for internal company projects.
+\vspace{-3pt}
+\item Research on applicability of graph databases (ArangoDB, Neo4j) for program analysis tasks.
+\vspace{-3pt}
+\end{itemize}
+}
+\resumeSubItem{Lua minifier}{
+\begin{itemize}
+\vspace{-5pt}
+\item Classic code reduction techniques: removing whitespace, comments, and blank lines; renaming variables and labels; dead code elimination and other language-specific code transformations.
+\vspace{-3pt}
+\item Ability to find and remove duplicate code fragments.
+\vspace{-3pt}
+\item Code size reduction by more than 2 times. Runtime under 2 minutes on a large codebase (5 MLOC).
+\vspace{-3pt}
+\end{itemize}
+}
+\resumeSubItem{Debugging tools for C/C++}{
+\begin{itemize}
+\vspace{-5pt}
+\item Support for debugging C/C++ code with GDB/LLDB on Linux/Windows/HarmonyOS.
+\vspace{-3pt}
+\item Remote device debugging via SSH and Telnet.
+\vspace{-3pt}
+\item Advanced debugging techniques (child process debugging, deadlock detector, thread fuzzer, memory debugging, etc.).
+\vspace{-3pt}
+\item Over 1500 regular users inside the company.
+\vspace{-3pt}
+\end{itemize}
+}
 \vspace{2pt}
-\resumeSubItem{\href{https://github.com/DrSergei/HuntTheWumpus}{Hunt the Wumpus(Java)}}{ Classic text based computer game. OOP and patterns are used to separate the essence and logic of the game.}
+\resumeSubItem{Debug Agent}{
+\begin{itemize}
+\vspace{-3pt}
+\item MCP server based on VS Code API for interacting with the debugging subsystem with full integration into VS Code UI.
+\vspace{-3pt}
+\item MCP server for CLI agents to work with debuggers such as GDB, LLDB, Delve, etc. via DAP.
+\vspace{-3pt}
+\end{itemize}
+}
 \vspace{2pt}
 \resumeSubHeadingListEnd
 
 %-----------Awards-----------------
 \section{Honors and Awards}
 \begin{description}[font=$\bullet$]
-\item {Prize-winner at the All-Russian Olympiad in Mathematics - 2021(44/166)}
+\item {Participant of the All-Russian Olympiad in Mathematics --- 2019 (71/130)}
 \vspace{-5pt}
-\item {Prize-winner at the All-Russian Olympiad in Economics - 2019(13/77), 2021(43/135)}
+\item {Prize-winner of the All-Russian Olympiad in Mathematics --- 2021 (44/166)}
 \vspace{-5pt}
-\item {Prize-winner and winner of many brown subject Olympiads}
+\item {Prize-winner of the All-Russian Olympiad in Economics --- 2019 (13/77), 2021 (43/135)}
+\vspace{-5pt}
+\item {Prize-winner of the Regional Mathematics Olympiad for university students of Saint Petersburg --- 2022 (12/122)}
+\vspace{-5pt}
+\item {Prize-winner of ``I am a Professional'' in ``Mathematics'' --- 2025}
+\vspace{-5pt}
+\item {Winner of the Siberian Mathematical Olympiad --- 2025 (8/378)}
+\vspace{-5pt}
+\item {Prize-winner of North Countries Universities Mathematical Competition --- 2026 (24/149)}
 \end{description}
 
 
 \vspace{-5pt}
-\section{Volunteer Experience}
-  \resumeSubHeadingListStart
-	\resumeSubheading
-    {Judge of the Ural tournament of young mathematicians}{Kirov, Russia}
-    {Checked the personal Olympiad and conducted mathematical battles.}{Present}
-    \vspace{5pt}
-    \resumeSubheading
-    {Jury member of the City and Regional Mathematical olympiad}{Kirov, Russia}
-    {Checked the participants' work and discussed the criteria.}{Dec - Feb 2021-2022}
-    \vspace{5pt}
-    {Jury member of Saint-Petersburg mathematical olympiad }{St. Petersburg, Russia}
-    {Checked of participants' decisions and assistance in organizing.}{Feb - Mar 2022}
-    \vspace{5pt}
-
-\resumeSubHeadingListEnd
+\section{Other Experience}
+\begin{description}[font=$\bullet$]
+\item {Teacher at Kirov Summer Multidisciplinary School (LMSH) --- 2021}
+\vspace{-5pt}
+\item {Jury of the municipal and regional stage of the All-Russian Olympiad in Mathematics (Kirov) --- 2021--2025}
+\vspace{-5pt}
+\item {Jury of the Saint Petersburg Mathematical Olympiad --- 2022--2026}
+\end{description}
 
 \end{document}
